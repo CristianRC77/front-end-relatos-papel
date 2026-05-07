@@ -122,13 +122,19 @@ export default function Login() {
           <h3>Credenciales de prueba:</h3>
           <div className="demo-list">
             <div className="demo-item">
-              <strong>TechStore:</strong> techstore / 123456
+              <strong>Héctor Morales:</strong> hmorales / 123456
             </div>
             <div className="demo-item">
-              <strong>Digital Office:</strong> digitaloffice / password123
+              <strong>William Alban:</strong> walban / 123456
             </div>
             <div className="demo-item">
-              <strong>InnovaCorp:</strong> innovacorp / admin2025
+              <strong>Elvis Mireles:</strong> emireles / 123456
+            </div>
+            <div className="demo-item">
+              <strong>Anggie Moyota:</strong> amoyota / 123456
+            </div>
+            <div className="demo-item">
+              <strong>Cristian Cancan:</strong> ccancan / 123456
             </div>
           </div>
         </div>

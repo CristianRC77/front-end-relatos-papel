@@ -2,13 +2,11 @@ import React, { useState } from "react";
 import { GlobalContext } from "./GlobalContext";
 
 export function GlobalProvider({ children }) {
-  const [darkMode, setDarkMode] = useState(false);
-  const toggleDarkMode = () => setDarkMode((v) => !v);
-
   const [cart, setCart] = useState([]);
   const [showCart, setShowCart] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
   const [showLoginMessage, setShowLoginMessage] = useState(false);
+  const [showAdded, setShowAdded] = useState(false);
 
   const addToCart = (item) => {
     setCart((prevCart) => {
@@ -42,8 +40,6 @@ export function GlobalProvider({ children }) {
   return (
     <GlobalContext.Provider
       value={{
-        darkMode,
-        toggleDarkMode,
         cart,
         setCart,
         showCart,
@@ -53,6 +49,8 @@ export function GlobalProvider({ children }) {
         updateQuantity,
         showSuccess,
         setShowSuccess,
+        showAdded,
+        setShowAdded,
         showLoginMessage,
         setShowLoginMessage,
       }}

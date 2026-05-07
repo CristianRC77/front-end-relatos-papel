@@ -8,7 +8,6 @@ import Home from "./Home/Home.jsx";
 import Search from "./Search/Search.jsx";
 import Cart from "./Cart/Cart.jsx";
 import Books from "./Books/Books.jsx";
-import Stores from "./Stores/Stores.jsx";
 import Contact from "./Contact/Contact.jsx";
 import BookDetail from "./BookDetail/BookDetail.jsx";
 import Login from "./Login/Login.jsx";
@@ -16,6 +15,7 @@ import Profile from "./Profile/Profile.jsx";
 import PrivateRoute from "./PrivateRoute/PrivateRoute.jsx";
 import {AuthProvider} from "../context/auth/AuthProvider.jsx";
 import SuccessPopup from "./SuccessPopup/SuccessPopup.jsx";
+import AddedPopup from "./AddedPopup/AddedPopup.jsx";
 import LoginMessage from "./LoginMessage/LoginMessage.jsx";
 
 export default function App() {
@@ -27,6 +27,7 @@ export default function App() {
                         <Search/>
                         <Cart/>
                         <SuccessPopup/>
+                        <AddedPopup/>
                         <LoginMessage/>
                         <Menu/>
                         <Routes>
@@ -35,7 +36,6 @@ export default function App() {
                                 <Route index element={<Home/>}/>
                                 <Route path="books" element={<Books/>}/>
                                 <Route path="books/:bookId" element={<BookDetail/>}/>
-                                <Route path="stores" element={<Stores/>}/>
                                 <Route path="contact" element={<Contact/>}/>
                                 <Route path="profile" element={
                                     <PrivateRoute>

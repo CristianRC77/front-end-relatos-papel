@@ -19,8 +19,8 @@ const LoginMessage = () => {
   };
 
   return (
-    <div className="login-message-overlay" onClick={handleClose}>
-      <div className={`login-message-modal ${darkMode ? 'dark' : ''}`} onClick={(e) => e.stopPropagation()}>
+    <div className="login-message-overlay" >
+      <div className="login-message-modal" >
         <p>Debes iniciar sesión para continuar con la compra</p>
         <div className="login-message-buttons">
           <button onClick={handleLogin}>Iniciar Sesión</button>

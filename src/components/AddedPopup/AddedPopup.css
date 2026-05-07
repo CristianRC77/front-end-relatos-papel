@@ -1,0 +1,23 @@
+.added-toast {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  z-index: 3000;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  font-size: 14px;
+  cursor: default;
+  transition: transform 200ms ease, opacity 200ms ease;
+}
+
+.added-toast p {
+  margin: 0;
+}
+
+.added-toast.dark {
+  background: #2b2b2b;
+  color: #fff;
+}

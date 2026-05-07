@@ -1,17 +1,24 @@
 import React, { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { GlobalContext } from '../../context/global/GlobalContext';
 import './SuccessPopup.css';
 
 const SuccessPopup = () => {
-  const { showSuccess, setShowSuccess, darkMode } = useContext(GlobalContext);
+  const { showSuccess, setShowSuccess} = useContext(GlobalContext);
+  const navigate = useNavigate();
+
+  const handleClose = () => {
+    setShowSuccess(false);
+    navigate('/books');
+  };
 
   if (!showSuccess) return null;
 
   return (
-    <div className="success-overlay" onClick={() => setShowSuccess(false)}>
-      <div className={`success-modal ${darkMode ? 'dark' : ''}`} onClick={(e) => e.stopPropagation()}>
+    <div className="success-overlay" >
+      <div className="success-modal" >
         <p>Pedido realizado satisfactoriamente</p>
-        <button onClick={() => setShowSuccess(false)}>Cerrar</button>
+        <button onClick={handleClose}>Cerrar</button>
       </div>
     </div>
   );

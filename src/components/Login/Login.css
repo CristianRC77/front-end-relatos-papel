@@ -3,8 +3,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 70vh;
-  padding: 20px;
+  /* Reservar espacio para el footer fijo: altura viewport - altura footer (aprox. 70px) */
+  min-height: calc(100vh - 70px);
+  padding: 20px 20px 40px 20px; /* extra padding-bottom por seguridad */
 }
 
 .login-container {
@@ -148,7 +149,7 @@
 @media (max-width: 480px) {
   .login {
     padding: 10px;
-    min-height: 60vh;
+    min-height: calc(100vh - 70px);
   }
 
   .login-container {

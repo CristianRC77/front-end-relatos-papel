@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/auth/AuthContext";
-import { mockCompanies } from "../utils/mockCompanies";
+import { mockUsers } from "../utils/mockUsers.js";
 
 export function useLogin() {
   const [isLoading, setIsLoading] = useState(false);
@@ -25,14 +25,14 @@ export function useLogin() {
       await new Promise(resolve => setTimeout(resolve, 1000));
 
       // Buscar usuario en datos mock
-      const company = mockCompanies.find(
+      const user = mockUsers.find(
         c => c.username === username && c.password === password
       );
 
-      if (company) {
+      if (user) {
         // Login exitoso
-        setUser(company);
-        console.log("Login exitoso para:", company.company.name);
+        setUser(user);
+        console.log("Login exitoso para:", user.user.name);
         setIsLoading(false);
         return { success: true };
       } else {

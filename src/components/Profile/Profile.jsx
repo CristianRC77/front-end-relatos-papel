@@ -40,7 +40,7 @@ export default function Profile() {
   const formatPrice = (price) => {
     return new Intl.NumberFormat('es-ES', {
       style: 'currency',
-      currency: 'EUR'
+      currency: 'USD'
     }).format(price);
   };
 
@@ -61,33 +61,20 @@ export default function Profile() {
         <div className="company-card">
           <div className="company-details">
             <div className="company-name">
-              <h3>{user.company.name}</h3>
-              <span className="company-sector">{user.company.sector}</span>
+              <h3>{user.user.name}</h3>
             </div>
             <div className="company-grid">
               <div className="detail-item">
                 <label>Email:</label>
-                <span>{user.company.email}</span>
+                <span>{user.user.email}</span>
               </div>
               <div className="detail-item">
                 <label>Teléfono:</label>
-                <span>{user.company.phone}</span>
+                <span>{user.user.phone}</span>
               </div>
               <div className="detail-item">
                 <label>Dirección:</label>
-                <span>{user.company.address}</span>
-              </div>
-              <div className="detail-item">
-                <label>CIF:</label>
-                <span>{user.company.cif}</span>
-              </div>
-              <div className="detail-item">
-                <label>Empleados:</label>
-                <span>{user.company.employeeCount}</span>
-              </div>
-              <div className="detail-item">
-                <label>Fundada:</label>
-                <span>{user.company.founded}</span>
+                <span>{user.user.address}</span>
               </div>
             </div>
           </div>

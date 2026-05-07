@@ -7,7 +7,7 @@ import {GlobalContext} from "../../context/global/GlobalContext.jsx";
 export default function BookDetail() {
   const { bookId } = useParams();
   const { book, loading, error } = useBook(bookId);
-  const { darkMode, addToCart } = useContext(GlobalContext);
+  const { darkMode, addToCart, setShowAdded } = useContext(GlobalContext);
 
   if (loading) {
     return (
@@ -117,7 +117,7 @@ export default function BookDetail() {
             <div className="book-actions">
               <button
                 className="add-to-cart-btn"
-                onClick={() => addToCart(book)}
+                onClick={() => { addToCart(book); setShowAdded(true); }}
                 disabled={book.stock === 0}
               >
                 {book.stock > 0 ? "Añadir al carrito" : "Sin stock"}
