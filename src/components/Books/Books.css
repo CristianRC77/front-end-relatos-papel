@@ -145,6 +145,27 @@
     color: #fff;
 }
 
+.add-to-cart-btn {
+    display: block;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.2s;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+    background: #218838;
+}
+
 .newsletter-error {
     color: #d32f2f;
     min-height: 24px;

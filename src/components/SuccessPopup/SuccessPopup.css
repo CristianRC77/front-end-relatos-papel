@@ -1,0 +1,45 @@
+.success-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-modal {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.success-modal.dark {
+  background: #2d2d2d;
+  border-color: #444;
+  color: #fff;
+}
+
+.success-modal p {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+}
+
+.success-modal button {
+  padding: 8px 16px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.success-modal button:hover {
+  background: #0056b3;
+}

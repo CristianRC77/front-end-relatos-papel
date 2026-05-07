@@ -71,7 +71,7 @@ export default function Login() {
       <div className="login-container">
         <div className="login-header">
           <h1>Iniciar Sesión</h1>
-          <p>Accede a tu cuenta empresarial de UNIR Supplies</p>
+          <p>Accede a tu cuenta Relatos de Papel</p>
         </div>
 
         <form className="login-form" onSubmit={handleSubmit}>

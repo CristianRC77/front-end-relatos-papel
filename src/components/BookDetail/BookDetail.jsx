@@ -1,15 +1,17 @@
-import React from "react";
+import React, {useContext} from "react";
 import { useParams, Link } from "react-router-dom";
 import "./BookDetail.css";
 import{ useBook } from "../../hooks/useBook.js";
+import {GlobalContext} from "../../context/global/GlobalContext.jsx";
 
 export default function BookDetail() {
   const { bookId } = useParams();
   const { book, loading, error } = useBook(bookId);
+  const { darkMode, addToCart } = useContext(GlobalContext);
 
   if (loading) {
     return (
-      <div className="product-detail">
+      <div className="book-detail">
         <div className="loading-container">
           <p className="loading-message">Cargando Libro...</p>
         </div>
@@ -19,7 +21,7 @@ export default function BookDetail() {
 
   if (error && !book) {
     return (
-      <div className="product-detail">
+      <div className="book-detail">
         <div className="error-container">
           <h2>Libro no encontrado</h2>
           <p>No se pudo encontrar el libro solicitado.</p>
@@ -30,7 +32,7 @@ export default function BookDetail() {
   }
 
   return (
-    <div className="product-detail">
+    <div className="book-detail">
       <div className="breadcrumb">
         <Link to="/books" className="back-link">← Volver a Libros</Link>
       </div>
@@ -38,14 +40,14 @@ export default function BookDetail() {
       {error && <p className="fetch-error">{error}</p>}
 
       {book && (
-        <div className="product-detail-content">
-          <div className="product-images">
+        <div className="book-detail-content">
+          <div className="book-images">
             <div className="main-image">
               <img
                 src={book.images.cover}
                 alt={book.title}
                 onError={(e) => {
-                  e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f0f0f0'/%3E%3Ctext x='200' y='150' text-anchor='middle' fill='%23999' font-family='Arial' font-size='16'%3EImagen del producto%3C/text%3E%3C/svg%3E";
+                  e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f0f0f0'/%3E%3Ctext x='200' y='150' text-anchor='middle' fill='%23999' font-family='Arial' font-size='16'%3EImagen del booko%3C/text%3E%3C/svg%3E";
                 }}
               />
             </div>
@@ -66,22 +68,23 @@ export default function BookDetail() {
             )}
           </div>
 
-          <div className="product-info">
-            <div className="product-header">
-              <h1 className="product-title">{book.title}</h1>
-              <span className="product-category">{book.format}</span>
+          <div className="book-info">
+            <div className="book-header">
+              <h1 className="book-title">{book.title}</h1>
+              <span className="book-category">{book.format}</span>
             </div>
 
-            <p className="product-description">{book.shortDescription}</p>
-            <p className="product-full-description">{book.description}</p>
+            <p className="book-description">{book.shortDescription}</p>
+            <p className="book-full-description">{book.description}</p>
 
-            <div className="product-pricing">
-              <span className="product-price">€{book.price}</span>
+            <div className="book-pricing">
+              <span className="book-price">${book.price}</span>
             </div>
 
-            <div className="product-actions">
+            <div className="book-actions">
               <button
                 className="add-to-cart-btn"
+                onClick={() => addToCart(book)}
                 disabled={book.stock === 0}
               >
                 {book.stock > 0 ? "Añadir al carrito" : "Sin stock"}

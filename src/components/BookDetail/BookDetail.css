@@ -1,5 +1,5 @@
-/* Estilos para la página de detalle de producto */
-.product-detail {
+/* Estilos para la página de detalle de booko */
+.book-detail {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -49,7 +49,7 @@
   border-left: 4px solid #1976d2;
 }
 
-.product-detail-content {
+.book-detail-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
@@ -57,7 +57,7 @@
 }
 
 /* Sección de imágenes */
-.product-images {
+.book-images {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -98,20 +98,20 @@
 }
 
 /* Sección de información */
-.product-info {
+.book-info {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.product-header {
+.book-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 15px;
 }
 
-.product-title {
+.book-title {
   font-size: 1.8rem;
   font-weight: 600;
   color: #232946;
@@ -119,7 +119,7 @@
   flex: 1;
 }
 
-.product-category {
+.book-category {
   background: #389cd1;
   color: #fff;
   padding: 6px 12px;
@@ -129,20 +129,20 @@
   white-space: nowrap;
 }
 
-.product-description {
+.book-description {
   font-size: 1.1rem;
   color: #666;
   line-height: 1.5;
   margin: 0;
 }
 
-.product-full-description {
+.book-full-description {
   color: #555;
   line-height: 1.6;
   margin: 0;
 }
 
-.product-pricing {
+.book-pricing {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -151,13 +151,13 @@
   border-bottom: 1px solid #e0e0e0;
 }
 
-.product-price {
+.book-price {
   font-size: 2rem;
   font-weight: 700;
   color: #389cd1;
 }
 
-.product-stock {
+.book-stock {
   color: #2e7d32;
   font-weight: 500;
 }
@@ -167,7 +167,7 @@
   font-weight: 600;
 }
 
-.product-actions {
+.book-actions {
   margin: 10px 0;
 }
 
@@ -194,7 +194,7 @@
 }
 
 /* Especificaciones */
-.product-specifications h3 {
+.book-specifications h3 {
   color: #389cd1;
   margin-bottom: 15px;
   font-size: 1.3rem;
@@ -226,18 +226,18 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .product-detail-content {
+  .book-detail-content {
     grid-template-columns: 1fr;
     gap: 25px;
   }
 
-  .product-header {
+  .book-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
   }
 
-  .product-pricing {
+  .book-pricing {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
@@ -264,16 +264,16 @@
   border-left-color: #81c784;
 }
 
-.main-content.dark .product-title {
+.main-content.dark .book-title {
   color: #fff;
 }
 
-.main-content.dark .product-description,
-.main-content.dark .product-full-description {
+.main-content.dark .book-description,
+.main-content.dark .book-full-description {
   color: #ccc;
 }
 
-.main-content.dark .product-pricing {
+.main-content.dark .book-pricing {
   border-color: #444;
 }
 

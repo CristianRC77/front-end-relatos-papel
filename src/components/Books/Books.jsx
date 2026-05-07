@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function Books() {
     const [email, setEmail] = useState("");
     const [error, setError] = useState("");
-    const { darkMode } = useContext(GlobalContext);
+    const { darkMode, addToCart } = useContext(GlobalContext);
 
     // Custom hook que maneja toda la lógica de libros
     const{books, loading, error: fetchError} = useBooks();
@@ -67,6 +67,7 @@ export default function Books() {
                                     >
                                         Ver detalles
                                     </Link>
+
                                 </div>
                             </div>
                         ))}
