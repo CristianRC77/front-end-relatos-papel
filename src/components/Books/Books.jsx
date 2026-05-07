@@ -46,7 +46,7 @@ export default function Books() {
 
                 {loading && <p className="loading-message">Cargando libros...</p>}
 
-                {fetchError && <p className="fetch-error">{fetchError}</p>}
+                {/*{fetchError && <p className="fetch-error">{fetchError}</p>}*/}
 
                 {!loading && books.length > 0 && (
                     <div className="books-grid">
@@ -57,6 +57,16 @@ export default function Books() {
                                     <span className="book-type">{book.format}</span>
                                 </div>
                                 <p className="book-description">{book.shortDescription}</p>
+                                <div className="cover-image">
+                                    <img
+                                        src={book.cover}
+                                        alt={book.title}
+                                        onError={(e) => {
+                                            e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f0f0f0'/%3E%3Ctext x='200' y='150' text-anchor='middle' fill='%23999' font-family='Arial' font-size='16'%3EImagen no disponible%3C/text%3E%3C/svg%3E";
+                                        }}
+                                    />
+                                </div>
+
                                 <div className="book-footer">
                                     <span className="product-price">${book.price}</span>
                                 </div>

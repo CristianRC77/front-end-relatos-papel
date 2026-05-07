@@ -7,7 +7,8 @@ export const mockBooks = [
         shortDescription: "Guía práctica para escribir código limpio y mantenible.",
         authors: ["Robert C. Martin"],
         price: 45.99,
-        publisher: "Prentice Hall"
+        publisher: "Prentice Hall",
+        cover: "https://covers.openlibrary.org/b/isbn/9780132350884-L.jpg"
     },
     {
         id: 2,
@@ -17,7 +18,8 @@ export const mockBooks = [
         shortDescription: "Consejos prácticos para programadores profesionales.",
         authors: ["Andrew Hunt", "David Thomas"],
         price: 49.99,
-        publisher: "Addison-Wesley"
+        publisher: "Addison-Wesley",
+        cover: "https://covers.openlibrary.org/b/isbn/9780201616224-L.jpg"
     },
     {
         id: 3,
@@ -27,7 +29,8 @@ export const mockBooks = [
         shortDescription: "Referencia esencial sobre patrones de diseño.",
         authors: ["Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides"],
         price: 54.99,
-        publisher: "Addison-Wesley"
+        publisher: "Addison-Wesley",
+        cover: "https://covers.openlibrary.org/b/isbn/9780201633610-L.jpg"
     },
     {
         id: 4,
@@ -37,7 +40,8 @@ export const mockBooks = [
         shortDescription: "Guía sobre modelado de dominios complejos.",
         authors: ["Eric Evans"],
         price: 62.99,
-        publisher: "Addison-Wesley"
+        publisher: "Addison-Wesley",
+        cover: "https://covers.openlibrary.org/b/isbn/9780321127426-L.jpg"
     },
     {
         id: 5,
@@ -47,7 +51,8 @@ export const mockBooks = [
         shortDescription: "Técnicas para mejorar código existente.",
         authors: ["Martin Fowler"],
         price: 58.5,
-        publisher: "Addison-Wesley"
+        publisher: "Addison-Wesley",
+        cover: "https://covers.openlibrary.org/b/isbn/9780134757599-L.jpg"
     },
     {
         id: 6,
@@ -57,7 +62,8 @@ export const mockBooks = [
         shortDescription: "Diseño de sistemas de datos escalables.",
         authors: ["Martin Kleppmann"],
         price: 64.99,
-        publisher: "O'Reilly Media"
+        publisher: "O'Reilly Media",
+        cover: "https://covers.openlibrary.org/b/isbn/9781491947659-L.jpg"
     },
     {
         id: 7,
@@ -67,7 +73,8 @@ export const mockBooks = [
         shortDescription: "Guía completa para aprender Python.",
         authors: ["Mark Lutz"],
         price: 79.99,
-        publisher: "O'Reilly Media"
+        publisher: "O'Reilly Media",
+        cover: "https://covers.openlibrary.org/b/isbn/9781449373320-L.jpg"
     },
     {
         id: 8,
@@ -77,7 +84,8 @@ export const mockBooks = [
         shortDescription: "Curso práctico de Python basado en proyectos.",
         authors: ["Eric Matthes"],
         price: 39.95,
-        publisher: "No Starch Press"
+        publisher: "No Starch Press",
+        cover: "https://covers.openlibrary.org/b/isbn/9781593279288-L.jpg"
     },
     {
         id: 9,
@@ -87,7 +95,8 @@ export const mockBooks = [
         shortDescription: "Python avanzado con enfoque idiomático.",
         authors: ["Luciano Ramalho"],
         price: 69.99,
-        publisher: "O'Reilly Media"
+        publisher: "O'Reilly Media",
+        cover: "https://covers.openlibrary.org/b/isbn/9781491916466-L.jpg"
     },
     {
         id: 10,
@@ -97,7 +106,8 @@ export const mockBooks = [
         shortDescription: "Referencia completa de JavaScript.",
         authors: ["David Flanagan"],
         price: 59.99,
-        publisher: "O'Reilly Media"
+        publisher: "O'Reilly Media",
+        cover: "https://covers.openlibrary.org/b/isbn/9781491946008-L.jpg"
     },
     {
         id: 11,
@@ -107,7 +117,8 @@ export const mockBooks = [
         shortDescription: "Patrones de diseño para aplicaciones Node.js.",
         authors: ["Mario Casciaro", "Luciano Mammino"],
         price: 52.99,
-        publisher: "Manning Publications"
+        publisher: "Manning Publications",
+        cover: "https://covers.openlibrary.org/b/isbn/9781617295867-L.jpg"
     },
     {
         id: 12,
@@ -117,7 +128,8 @@ export const mockBooks = [
         shortDescription: "Introducción práctica al desarrollo con React.",
         authors: ["Greg Lim"],
         price: 34.99,
-        publisher: "Apress"
+        publisher: "Apress",
+        cover: "https://covers.openlibrary.org/b/isbn/9781484281493-L.jpg"
     },
     {
         id: 13,
@@ -127,7 +139,8 @@ export const mockBooks = [
         shortDescription: "Desarrollo full stack con Spring Boot y React.",
         authors: ["Juha Hinkula"],
         price: 44.99,
-        publisher: "Apress"
+        publisher: "Apress",
+        cover: "https://covers.openlibrary.org/b/isbn/9781484281448-L.jpg"
     },
     {
         id: 14,
@@ -137,7 +150,8 @@ export const mockBooks = [
         shortDescription: "Desarrollo web profesional con ASP.NET Core.",
         authors: ["Adam Freeman"],
         price: 74.99,
-        publisher: "Apress"
+        publisher: "Apress",
+        cover: "https://covers.openlibrary.org/b/isbn/9781484287914-L.jpg"
     },
     {
         id: 15,
@@ -147,7 +161,8 @@ export const mockBooks = [
         shortDescription: "Guía práctica para iniciar con Kubernetes.",
         authors: ["Brendan Burns", "Joe Beda", "Kelsey Hightower"],
         price: 47.99,
-        publisher: "O'Reilly Media"
+        publisher: "O'Reilly Media",
+        cover: "https://covers.openlibrary.org/b/isbn/9781492038439-L.jpg"
     },
     {
         id: 16,
@@ -157,7 +172,8 @@ export const mockBooks = [
         shortDescription: "Infraestructura como código con Terraform.",
         authors: ["Yevgeniy Brikman"],
         price: 55.99,
-        publisher: "O'Reilly Media"
+        publisher: "O'Reilly Media",
+        cover: "https://covers.openlibrary.org/b/isbn/9781492006739-L.jpg"
     },
     {
         id: 17,
@@ -167,7 +183,8 @@ export const mockBooks = [
         shortDescription: "Automatización práctica con Python.",
         authors: ["Al Sweigart"],
         price: 36.99,
-        publisher: "No Starch Press"
+        publisher: "No Starch Press",
+        cover: "https://covers.openlibrary.org/b/isbn/9781593279509-L.jpg"
     },
     {
         id: 18,
@@ -177,7 +194,8 @@ export const mockBooks = [
         shortDescription: "Machine learning práctico con Python.",
         authors: ["Aurélien Géron"],
         price: 72.99,
-        publisher: "O'Reilly Media"
+        publisher: "O'Reilly Media",
+        cover: "https://covers.openlibrary.org/b/isbn/9781492076197-L.jpg"
     },
     {
         id: 19,
@@ -187,7 +205,8 @@ export const mockBooks = [
         shortDescription: "Introducción práctica al deep learning.",
         authors: ["Ronald T. Kneusel"],
         price: 48.99,
-        publisher: "No Starch Press"
+        publisher: "No Starch Press",
+        cover: "https://covers.openlibrary.org/b/isbn/9781484273669-L.jpg"
     },
     {
         id: 20,
@@ -197,7 +216,8 @@ export const mockBooks = [
         shortDescription: "Ciencia de datos desde cero con Python.",
         authors: ["Joel Grus"],
         price: 46.99,
-        publisher: "O'Reilly Media"
+        publisher: "O'Reilly Media",
+        cover: "https://covers.openlibrary.org/b/isbn/9781491914250-L.jpg"
     },
     {
         id: 21,
@@ -207,7 +227,8 @@ export const mockBooks = [
         shortDescription: "Análisis de datos con pandas y NumPy.",
         authors: ["Wes McKinney"],
         price: 59.99,
-        publisher: "O'Reilly Media"
+        publisher: "O'Reilly Media",
+        cover: "https://covers.openlibrary.org/b/isbn/9781491957660-L.jpg"
     },
     {
         id: 22,
@@ -217,7 +238,8 @@ export const mockBooks = [
         shortDescription: "Referencia académica de inteligencia artificial.",
         authors: ["Stuart Russell", "Peter Norvig"],
         price: 89.99,
-        publisher: "Pearson"
+        publisher: "Pearson",
+        cover: "https://covers.openlibrary.org/b/isbn/9780134610993-L.jpg"
     },
     {
         id: 23,
@@ -227,7 +249,8 @@ export const mockBooks = [
         shortDescription: "Referencia completa sobre algoritmos.",
         authors: ["Thomas H. Cormen", "Charles E. Leiserson", "Ronald L. Rivest", "Clifford Stein"],
         price: 94.99,
-        publisher: "MIT Press"
+        publisher: "MIT Press",
+        cover: "https://covers.openlibrary.org/b/isbn/9780262046305-L.jpg"
     },
     {
         id: 24,
@@ -237,7 +260,8 @@ export const mockBooks = [
         shortDescription: "Referencia clásica del lenguaje C.",
         authors: ["Brian W. Kernighan", "Dennis M. Ritchie"],
         price: 42.99,
-        publisher: "Prentice Hall"
+        publisher: "Prentice Hall",
+        cover: "https://covers.openlibrary.org/b/isbn/9780131103627-L.jpg"
     },
     {
         id: 25,
@@ -247,7 +271,8 @@ export const mockBooks = [
         shortDescription: "Buenas prácticas avanzadas para Java.",
         authors: ["Joshua Bloch"],
         price: 51.99,
-        publisher: "Addison-Wesley"
+        publisher: "Addison-Wesley",
+        cover: "https://covers.openlibrary.org/b/isbn/9780321356680-L.jpg"
     },
     {
         id: 26,
@@ -257,7 +282,8 @@ export const mockBooks = [
         shortDescription: "Introducción visual y práctica a Java.",
         authors: ["Kathy Sierra", "Bert Bates", "Trisha Gee"],
         price: 59.99,
-        publisher: "O'Reilly Media"
+        publisher: "O'Reilly Media",
+        cover: "https://covers.openlibrary.org/b/isbn/9781491953262-L.jpg"
     },
     {
         id: 27,
@@ -267,7 +293,8 @@ export const mockBooks = [
         shortDescription: "Introducción moderna a JavaScript.",
         authors: ["Marijn Haverbeke"],
         price: 38.99,
-        publisher: "No Starch Press"
+        publisher: "No Starch Press",
+        cover: "https://covers.openlibrary.org/b/isbn/9781593275846-L.jpg"
     },
     {
         id: 28,
@@ -277,7 +304,8 @@ export const mockBooks = [
         shortDescription: "Guía práctica para aprender Rust.",
         authors: ["Steve Klabnik", "Carol Nichols"],
         price: 44.99,
-        publisher: "No Starch Press"
+        publisher: "No Starch Press",
+        cover: "https://covers.openlibrary.org/b/isbn/9781593278281-L.jpg"
     },
     {
         id: 29,
@@ -287,7 +315,8 @@ export const mockBooks = [
         shortDescription: "Análisis de decisiones difíciles en arquitectura.",
         authors: ["Neal Ford", "Mark Richards", "Pramod Sadalage", "Zhamak Dehghani"],
         price: 61.99,
-        publisher: "O'Reilly Media"
+        publisher: "O'Reilly Media",
+        cover: "https://covers.openlibrary.org/b/isbn/9781492078533-L.jpg"
     },
     {
         id: 30,
@@ -297,6 +326,7 @@ export const mockBooks = [
         shortDescription: "Diseño e implementación de microservicios.",
         authors: ["Sam Newman"],
         price: 63.99,
-        publisher: "O'Reilly Media"
+        publisher: "O'Reilly Media",
+        cover: "https://covers.openlibrary.org/b/isbn/9781491939690-L.jpg"
     }
 ];

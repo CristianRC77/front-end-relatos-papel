@@ -8,7 +8,7 @@ export const mockBookDetails = {
         shortDescription: "Guía práctica para escribir código limpio y mantenible.",
         authors: [
             {
-                id: "author_001",
+                id: "1",
                 name: "Robert C. Martin",
                 biography: "Autor y consultor especializado en desarrollo de software."
             }
@@ -23,16 +23,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 464,
         categories: [
-            { id: "cat_001", name: "Programming" },
-            { id: "cat_002", name: "Software Engineering" }
+            { id: 1, name: "Programming" },
+            { id: 2, name: "Software Engineering" }
         ],
         price: 45.99,
         stock: 14,
         images: {
-            cover: "https://example.com/images/books/clean-code-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9780132350884-L.jpg",
             gallery: [
-                "https://example.com/images/books/clean-code-back.jpg",
-                "https://example.com/images/books/clean-code-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9780132350884-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9780132350884-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9780132350884-S.jpg"
             ]
         }
     },
@@ -46,7 +47,7 @@ export const mockBookDetails = {
         shortDescription: "Consejos prácticos para programadores profesionales.",
         authors: [
             {
-                id: "author_002",
+                id: 2,
                 name: "Andrew Hunt",
                 biography: "Programador y autor especializado en prácticas pragmáticas de desarrollo."
             },
@@ -66,16 +67,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 352,
         categories: [
-            { id: "cat_001", name: "Programming" },
-            { id: "cat_003", name: "Professional Development" }
+            { id: 1, name: "Programming" },
+            { id: 3, name: "Professional Development" }
         ],
         price: 49.99,
         stock: 3,
         images: {
-            cover: "https://example.com/images/books/the-pragmatic-programmer-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9780201616224-L.jpg",
             gallery: [
-                "https://example.com/images/books/the-pragmatic-programmer-back.jpg",
-                "https://example.com/images/books/the-pragmatic-programmer-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9780201616224-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9780201616224-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9780201616224-S.jpg"
             ]
         }
     },
@@ -89,12 +91,12 @@ export const mockBookDetails = {
         shortDescription: "Referencia esencial sobre patrones de diseño.",
         authors: [
             {
-                id: "author_004",
+                id: 4,
                 name: "Erich Gamma",
                 biography: "Ingeniero de software reconocido por sus aportes a los patrones de diseño."
             },
             {
-                id: "author_005",
+                id: 5,
                 name: "Richard Helm",
                 biography: "Especialista en diseño de software orientado a objetos."
             },
@@ -119,16 +121,17 @@ export const mockBookDetails = {
         format: "hardcover",
         pages: 395,
         categories: [
-            { id: "cat_002", name: "Software Engineering" },
-            { id: "cat_004", name: "Software Architecture" }
+            { id: 2, name: "Software Engineering" },
+            { id: 4, name: "Software Architecture" }
         ],
         price: 54.99,
         stock: 10,
         images: {
-            cover: "https://example.com/images/books/design-patterns-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9780201633610-L.jpg",
             gallery: [
-                "https://example.com/images/books/design-patterns-back.jpg",
-                "https://example.com/images/books/design-patterns-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9780201633610-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9780201633610-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9780201633610-S.jpg"
             ]
         }
     },
@@ -157,16 +160,17 @@ export const mockBookDetails = {
         format: "hardcover",
         pages: 560,
         categories: [
-            { id: "cat_002", name: "Software Engineering" },
-            { id: "cat_004", name: "Software Architecture" }
+            { id: 2, name: "Software Engineering" },
+            { id: 4, name: "Software Architecture" }
         ],
         price: 62.99,
         stock: 0,
         images: {
-            cover: "https://example.com/images/books/domain-driven-design-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9780321127426-L.jpg",
             gallery: [
-                "https://example.com/images/books/domain-driven-design-back.jpg",
-                "https://example.com/images/books/domain-driven-design-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9780321127426-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9780321127426-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9780321127426-S.jpg"
             ]
         }
     },
@@ -195,16 +199,17 @@ export const mockBookDetails = {
         format: "hardcover",
         pages: 448,
         categories: [
-            { id: "cat_001", name: "Programming" },
-            { id: "cat_002", name: "Software Engineering" }
+            { id: 1, name: "Programming" },
+            { id: 2, name: "Software Engineering" }
         ],
         price: 58.5,
         stock: 20,
         images: {
-            cover: "https://example.com/images/books/refactoring-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9780134757599-L.jpg",
             gallery: [
-                "https://example.com/images/books/refactoring-back.jpg",
-                "https://example.com/images/books/refactoring-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9780134757599-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9780134757599-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9780134757599-S.jpg"
             ]
         }
     },
@@ -233,16 +238,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 616,
         categories: [
-            { id: "cat_005", name: "Databases" },
-            { id: "cat_006", name: "Distributed Systems" }
+            { id: 5, name: "Databases" },
+            { id: 6, name: "Distributed Systems" }
         ],
         price: 64.99,
         stock: 15,
         images: {
-            cover: "https://example.com/images/books/designing-data-intensive-applications-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9781491947659-L.jpg",
             gallery: [
-                "https://example.com/images/books/designing-data-intensive-applications-back.jpg",
-                "https://example.com/images/books/designing-data-intensive-applications-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9781491947659-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781491947659-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781491947659-S.jpg"
             ]
         }
     },
@@ -271,16 +277,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 1648,
         categories: [
-            { id: "cat_001", name: "Programming" },
-            { id: "cat_007", name: "Python" }
+            { id: 1, name: "Programming" },
+            { id: 7, name: "Python" }
         ],
         price: 79.99,
         stock: 4,
         images: {
-            cover: "https://example.com/images/books/learning-python-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9781449373320-L.jpg",
             gallery: [
-                "https://example.com/images/books/learning-python-back.jpg",
-                "https://example.com/images/books/learning-python-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9781449373320-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781449373320-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781449373320-S.jpg"
             ]
         }
     },
@@ -309,16 +316,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 544,
         categories: [
-            { id: "cat_001", name: "Programming" },
-            { id: "cat_007", name: "Python" }
+            { id: 1, name: "Programming" },
+            { id: 7, name: "Python" }
         ],
         price: 39.95,
         stock: 5,
         images: {
-            cover: "https://example.com/images/books/python-crash-course-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9781593279288-L.jpg",
             gallery: [
-                "https://example.com/images/books/python-crash-course-back.jpg",
-                "https://example.com/images/books/python-crash-course-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9781593279288-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781593279288-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781593279288-S.jpg"
             ]
         }
     },
@@ -347,16 +355,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 1012,
         categories: [
-            { id: "cat_001", name: "Programming" },
-            { id: "cat_007", name: "Python" }
+            { id: 1, name: "Programming" },
+            { id: 7, name: "Python" }
         ],
         price: 69.99,
         stock: 0,
         images: {
-            cover: "https://example.com/images/books/fluent-python-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9781491916466-L.jpg",
             gallery: [
-                "https://example.com/images/books/fluent-python-back.jpg",
-                "https://example.com/images/books/fluent-python-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9781491916466-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781491916466-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781491916466-S.jpg"
             ]
         }
     },
@@ -385,16 +394,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 704,
         categories: [
-            { id: "cat_001", name: "Programming" },
-            { id: "cat_008", name: "Web Development" }
+            { id: 1, name: "Programming" },
+            { id: 8, name: "Web Development" }
         ],
         price: 59.99,
         stock: 0,
         images: {
-            cover: "https://example.com/images/books/javascript-definitive-guide-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9781491946008-L.jpg",
             gallery: [
-                "https://example.com/images/books/javascript-definitive-guide-back.jpg",
-                "https://example.com/images/books/javascript-definitive-guide-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9781491946008-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781491946008-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781491946008-S.jpg"
             ]
         }
     },
@@ -428,16 +438,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 520,
         categories: [
-            { id: "cat_008", name: "Web Development" },
-            { id: "cat_009", name: "Backend Development" }
+            { id: 8, name: "Web Development" },
+            { id: 9, name: "Backend Development" }
         ],
         price: 52.99,
         stock: 14,
         images: {
-            cover: "https://example.com/images/books/nodejs-design-patterns-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9781617295867-L.jpg",
             gallery: [
-                "https://example.com/images/books/nodejs-design-patterns-back.jpg",
-                "https://example.com/images/books/nodejs-design-patterns-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9781617295867-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781617295867-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781617295867-S.jpg"
             ]
         }
     },
@@ -466,16 +477,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 180,
         categories: [
-            { id: "cat_008", name: "Web Development" },
-            { id: "cat_010", name: "Frontend Development" }
+            { id: 8, name: "Web Development" },
+            { id: 10, name: "Frontend Development" }
         ],
         price: 34.99,
         stock: 1,
         images: {
-            cover: "https://example.com/images/books/beginning-react-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9781484281493-L.jpg",
             gallery: [
-                "https://example.com/images/books/beginning-react-back.jpg",
-                "https://example.com/images/books/beginning-react-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9781484281493-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781484281493-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781484281493-S.jpg"
             ]
         }
     },
@@ -504,16 +516,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 378,
         categories: [
-            { id: "cat_008", name: "Web Development" },
-            { id: "cat_011", name: "Full Stack Development" }
+            { id: 8, name: "Web Development" },
+            { id: 11, name: "Full Stack Development" }
         ],
         price: 44.99,
         stock: 5,
         images: {
-            cover: "https://example.com/images/books/full-stack-spring-boot-react-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9781484281448-L.jpg",
             gallery: [
-                "https://example.com/images/books/full-stack-spring-boot-react-back.jpg",
-                "https://example.com/images/books/full-stack-spring-boot-react-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9781484281448-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781484281448-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781484281448-S.jpg"
             ]
         }
     },
@@ -542,16 +555,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 1256,
         categories: [
-            { id: "cat_008", name: "Web Development" },
-            { id: "cat_009", name: "Backend Development" }
+            { id: 8, name: "Web Development" },
+            { id: 9, name: "Backend Development" }
         ],
         price: 74.99,
         stock: 8,
         images: {
-            cover: "https://example.com/images/books/pro-aspnet-core-6-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9781484287914-L.jpg",
             gallery: [
-                "https://example.com/images/books/pro-aspnet-core-6-back.jpg",
-                "https://example.com/images/books/pro-aspnet-core-6-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9781484287914-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781484287914-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781484287914-S.jpg"
             ]
         }
     },
@@ -590,16 +604,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 280,
         categories: [
-            { id: "cat_012", name: "DevOps" },
-            { id: "cat_013", name: "Cloud Computing" }
+            { id: 12, name: "DevOps" },
+            { id: 13, name: "Cloud Computing" }
         ],
         price: 47.99,
         stock: 46,
         images: {
-            cover: "https://example.com/images/books/kubernetes-up-and-running-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9781492038439-L.jpg",
             gallery: [
-                "https://example.com/images/books/kubernetes-up-and-running-back.jpg",
-                "https://example.com/images/books/kubernetes-up-and-running-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9781492038439-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781492038439-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781492038439-S.jpg"
             ]
         }
     },
@@ -628,16 +643,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 500,
         categories: [
-            { id: "cat_012", name: "DevOps" },
-            { id: "cat_013", name: "Cloud Computing" }
+            { id: 12, name: "DevOps" },
+            { id: 13, name: "Cloud Computing" }
         ],
         price: 55.99,
         stock: 7,
         images: {
-            cover: "https://example.com/images/books/terraform-up-and-running-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9781492006739-L.jpg",
             gallery: [
-                "https://example.com/images/books/terraform-up-and-running-back.jpg",
-                "https://example.com/images/books/terraform-up-and-running-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9781492006739-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781492006739-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781492006739-S.jpg"
             ]
         }
     },
@@ -666,16 +682,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 592,
         categories: [
-            { id: "cat_001", name: "Programming" },
-            { id: "cat_007", name: "Python" }
+            { id: 1, name: "Programming" },
+            { id: 7, name: "Python" }
         ],
         price: 36.99,
         stock: 0,
         images: {
-            cover: "https://example.com/images/books/automate-boring-stuff-python-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9781593279509-L.jpg",
             gallery: [
-                "https://example.com/images/books/automate-boring-stuff-python-back.jpg",
-                "https://example.com/images/books/automate-boring-stuff-python-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9781593279509-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781593279509-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781593279509-S.jpg"
             ]
         }
     },
@@ -704,16 +721,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 856,
         categories: [
-            { id: "cat_014", name: "Artificial Intelligence" },
-            { id: "cat_015", name: "Machine Learning" }
+            { id: 14, name: "Artificial Intelligence" },
+            { id: 15, name: "Machine Learning" }
         ],
         price: 72.99,
         stock: 4,
         images: {
-            cover: "https://example.com/images/books/hands-on-machine-learning-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9781492076197-L.jpg",
             gallery: [
-                "https://example.com/images/books/hands-on-machine-learning-back.jpg",
-                "https://example.com/images/books/hands-on-machine-learning-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9781492076197-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781492076197-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781492076197-S.jpg"
             ]
         }
     },
@@ -742,16 +760,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 464,
         categories: [
-            { id: "cat_014", name: "Artificial Intelligence" },
-            { id: "cat_016", name: "Deep Learning" }
+            { id: 14, name: "Artificial Intelligence" },
+            { id: 16, name: "Deep Learning" }
         ],
         price: 48.99,
         stock: 19,
         images: {
-            cover: "https://example.com/images/books/practical-deep-learning-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9781484273669-L.jpg",
             gallery: [
-                "https://example.com/images/books/practical-deep-learning-back.jpg",
-                "https://example.com/images/books/practical-deep-learning-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9781484273669-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781484273669-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781484273669-S.jpg"
             ]
         }
     },
@@ -780,16 +799,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 406,
         categories: [
-            { id: "cat_017", name: "Data Science" },
-            { id: "cat_007", name: "Python" }
+            { id: 17, name: "Data Science" },
+            { id: 7, name: "Python" }
         ],
         price: 46.99,
         stock: 15,
         images: {
-            cover: "https://example.com/images/books/data-science-from-scratch-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9781491914250-L.jpg",
             gallery: [
-                "https://example.com/images/books/data-science-from-scratch-back.jpg",
-                "https://example.com/images/books/data-science-from-scratch-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9781491914250-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781491914250-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781491914250-S.jpg"
             ]
         }
     },
@@ -818,16 +838,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 579,
         categories: [
-            { id: "cat_017", name: "Data Science" },
-            { id: "cat_007", name: "Python" }
+            { id: 17, name: "Data Science" },
+            { id: 7, name: "Python" }
         ],
         price: 59.99,
         stock: 3,
         images: {
-            cover: "https://example.com/images/books/python-for-data-analysis-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9781491957660-L.jpg",
             gallery: [
-                "https://example.com/images/books/python-for-data-analysis-back.jpg",
-                "https://example.com/images/books/python-for-data-analysis-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9781491957660-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781491957660-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781491957660-S.jpg"
             ]
         }
     },
@@ -861,16 +882,17 @@ export const mockBookDetails = {
         format: "hardcover",
         pages: 1136,
         categories: [
-            { id: "cat_014", name: "Artificial Intelligence" },
-            { id: "cat_018", name: "Computer Science" }
+            { id: 14, name: "Artificial Intelligence" },
+            { id: 18, name: "Computer Science" }
         ],
         price: 89.99,
         stock: 6,
         images: {
-            cover: "https://example.com/images/books/artificial-intelligence-modern-approach-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9780134610993-L.jpg",
             gallery: [
-                "https://example.com/images/books/artificial-intelligence-modern-approach-back.jpg",
-                "https://example.com/images/books/artificial-intelligence-modern-approach-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9780134610993-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9780134610993-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9780134610993-S.jpg"
             ]
         }
     },
@@ -914,16 +936,17 @@ export const mockBookDetails = {
         format: "hardcover",
         pages: 1312,
         categories: [
-            { id: "cat_018", name: "Computer Science" },
-            { id: "cat_019", name: "Algorithms" }
+            { id: 18, name: "Computer Science" },
+            { id: 19, name: "Algorithms" }
         ],
         price: 94.99,
         stock: 56,
         images: {
-            cover: "https://example.com/images/books/introduction-to-algorithms-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9780262046305-L.jpg",
             gallery: [
-                "https://example.com/images/books/introduction-to-algorithms-back.jpg",
-                "https://example.com/images/books/introduction-to-algorithms-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9780262046305-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9780262046305-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9780262046305-S.jpg"
             ]
         }
     },
@@ -957,16 +980,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 272,
         categories: [
-            { id: "cat_001", name: "Programming" },
-            { id: "cat_020", name: "C Programming" }
+            { id: 1, name: "Programming" },
+            { id: 20, name: "C Programming" }
         ],
         price: 42.99,
         stock: 0,
         images: {
-            cover: "https://example.com/images/books/the-c-programming-language-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9780131103627-L.jpg",
             gallery: [
-                "https://example.com/images/books/the-c-programming-language-back.jpg",
-                "https://example.com/images/books/the-c-programming-language-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9780131103627-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9780131103627-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9780131103627-S.jpg"
             ]
         }
     },
@@ -995,16 +1019,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 416,
         categories: [
-            { id: "cat_001", name: "Programming" },
-            { id: "cat_021", name: "Java" }
+            { id: 1, name: "Programming" },
+            { id: 21, name: "Java" }
         ],
         price: 51.99,
         stock: 1,
         images: {
-            cover: "https://example.com/images/books/effective-java-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9780321356680-L.jpg",
             gallery: [
-                "https://example.com/images/books/effective-java-back.jpg",
-                "https://example.com/images/books/effective-java-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9780321356680-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9780321356680-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9780321356680-S.jpg"
             ]
         }
     },
@@ -1043,16 +1068,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 752,
         categories: [
-            { id: "cat_001", name: "Programming" },
-            { id: "cat_021", name: "Java" }
+            { id: 1, name: "Programming" },
+            { id: 21, name: "Java" }
         ],
         price: 59.99,
         stock: 5,
         images: {
-            cover: "https://example.com/images/books/head-first-java-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9781491953262-L.jpg",
             gallery: [
-                "https://example.com/images/books/head-first-java-back.jpg",
-                "https://example.com/images/books/head-first-java-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9781491953262-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781491953262-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781491953262-S.jpg"
             ]
         }
     },
@@ -1081,16 +1107,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 472,
         categories: [
-            { id: "cat_001", name: "Programming" },
-            { id: "cat_008", name: "Web Development" }
+            { id: 1, name: "Programming" },
+            { id: 8, name: "Web Development" }
         ],
         price: 38.99,
         stock: 8,
         images: {
-            cover: "https://example.com/images/books/eloquent-javascript-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9781593275846-L.jpg",
             gallery: [
-                "https://example.com/images/books/eloquent-javascript-back.jpg",
-                "https://example.com/images/books/eloquent-javascript-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9781593275846-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781593275846-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781593275846-S.jpg"
             ]
         }
     },
@@ -1124,16 +1151,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 560,
         categories: [
-            { id: "cat_001", name: "Programming" },
-            { id: "cat_022", name: "Systems Programming" }
+            { id: 1, name: "Programming" },
+            { id: 22, name: "Systems Programming" }
         ],
         price: 44.99,
         stock: 20,
         images: {
-            cover: "https://example.com/images/books/rust-programming-language-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9781593278281-L.jpg",
             gallery: [
-                "https://example.com/images/books/rust-programming-language-back.jpg",
-                "https://example.com/images/books/rust-programming-language-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9781593278281-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781593278281-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781593278281-S.jpg"
             ]
         }
     },
@@ -1177,16 +1205,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 462,
         categories: [
-            { id: "cat_004", name: "Software Architecture" },
-            { id: "cat_006", name: "Distributed Systems" }
+            { id: 4, name: "Software Architecture" },
+            { id: 6, name: "Distributed Systems" }
         ],
         price: 61.99,
         stock: 10,
         images: {
-            cover: "https://example.com/images/books/software-architecture-hard-parts-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9781492078533-L.jpg",
             gallery: [
-                "https://example.com/images/books/software-architecture-hard-parts-back.jpg",
-                "https://example.com/images/books/software-architecture-hard-parts-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9781492078533-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781492078533-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781492078533-S.jpg"
             ]
         }
     },
@@ -1215,16 +1244,17 @@ export const mockBookDetails = {
         format: "paperback",
         pages: 616,
         categories: [
-            { id: "cat_004", name: "Software Architecture" },
-            { id: "cat_009", name: "Backend Development" }
+            { id: 4, name: "Software Architecture" },
+            { id: 9, name: "Backend Development" }
         ],
         price: 63.99,
         stock: 16,
         images: {
-            cover: "https://example.com/images/books/building-microservices-cover.jpg",
+            cover: "https://covers.openlibrary.org/b/isbn/9781491939690-L.jpg",
             gallery: [
-                "https://example.com/images/books/building-microservices-back.jpg",
-                "https://example.com/images/books/building-microservices-inside.jpg"
+                "https://covers.openlibrary.org/b/isbn/9781491939690-L.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781491939690-M.jpg",
+                "https://covers.openlibrary.org/b/isbn/9781491939690-S.jpg"
             ]
         }
     }

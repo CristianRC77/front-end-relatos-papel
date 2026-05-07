@@ -37,7 +37,7 @@ export default function BookDetail() {
         <Link to="/books" className="back-link">← Volver a Libros</Link>
       </div>
 
-      {error && <p className="fetch-error">{error}</p>}
+      {/*{error && <p className="fetch-error">{error}</p>}*/}
 
       {book && (
         <div className="book-detail-content">
@@ -47,7 +47,7 @@ export default function BookDetail() {
                 src={book.images.cover}
                 alt={book.title}
                 onError={(e) => {
-                  e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f0f0f0'/%3E%3Ctext x='200' y='150' text-anchor='middle' fill='%23999' font-family='Arial' font-size='16'%3EImagen del booko%3C/text%3E%3C/svg%3E";
+                  e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f0f0f0'/%3E%3Ctext x='200' y='150' text-anchor='middle' fill='%23999' font-family='Arial' font-size='16'%3EImagen del libro%3C/text%3E%3C/svg%3E";
                 }}
               />
             </div>
@@ -76,6 +76,39 @@ export default function BookDetail() {
 
             <p className="book-description">{book.shortDescription}</p>
             <p className="book-full-description">{book.description}</p>
+
+              <div className="product-specifications">
+                  <h3>Autor/es</h3>
+                  <div className="specs-grid">
+                      {book.authors.map((aut, index) => (
+                          <div key={index} className="spec-item">
+                              <span className="spec-value">{aut.name}</span>
+                              <span className="spec-value">{aut.biography}</span>
+                          </div>
+                      ))}
+                  </div>
+              </div>
+
+              <div className="product-specifications">
+                  <h3>Categorias</h3>
+                  <div className="specs-grid">
+                      {book.categories.map((cat, index) => (
+                          <div key={index} className="spec-item">
+                              <span className="spec-value">{cat.name}</span>
+                          </div>
+                      ))}
+                  </div>
+              </div>
+
+              <div className="product-specifications">
+                  <h3>Editorial</h3>
+                  <div className="specs-grid">
+                          <div className="spec-item">
+                              <span className="spec-value">{book.publisher.name}</span>
+                          </div>
+
+                  </div>
+              </div>
 
             <div className="book-pricing">
               <span className="book-price">${book.price}</span>

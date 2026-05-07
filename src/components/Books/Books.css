@@ -125,6 +125,22 @@
     margin-bottom: 0;
 }
 
+.cover-image {
+    width: 100%;
+    aspect-ratio: 4/3;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.cover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    background: #f0f0f0;
+}
+
 .view-detail-btn {
     display: block;
     background: #389cd1;
